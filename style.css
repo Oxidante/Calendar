@@ -9,7 +9,7 @@
 	--light-main: #fdfdfd;
 	--light-second: #c3c2c8;
 	--light-hover: #edf0f5;
-	--light-text: #151326;
+	--light-text: #151426;
 
 	--blue: #0000ff;
 	--white: #fff;
@@ -78,10 +78,10 @@ html,body {
 }
 
 .calendar-week-day {
+	height: 50px;
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 	font-weight: 600;
-	height: 50px;
 }
 
 .calendar-week-day div {
@@ -241,3 +241,11 @@ html,body {
 	transition-delay: 0.6s;
 }
 
+.calendar-days div.curr-date {
+	background-color: var(--blue);
+	color: var(--white);
+	border-radius: 50%;
+}
+.calendar-days div.curr-date span {
+	display: none;
+}
